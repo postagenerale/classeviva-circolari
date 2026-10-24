@@ -1,0 +1,79 @@
+
+Welcome to Gradle 8.9!
+
+Here are the highlights of this release:
+ - Enhanced Error and Warning Messages
+ - IDE Integration Improvements
+ - Daemon JVM Information
+
+For more details see https://docs.gradle.org/8.9/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.9/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :classepiu:buildKotlinToolingMetadata
+> Task :classepiu:checkKotlinGradlePluginConfigurationErrors
+> Task :classepiu:preBuild UP-TO-DATE
+> Task :classepiu:preReleaseBuild UP-TO-DATE
+> Task :classepiu:generateReleaseBuildConfig
+> Task :classepiu:generateReleaseResValues
+> Task :classepiu:checkReleaseAarMetadata
+> Task :classepiu:mapReleaseSourceSetPaths
+> Task :classepiu:generateReleaseResources
+> Task :classepiu:packageReleaseResources
+> Task :classepiu:mergeReleaseResources
+> Task :classepiu:createReleaseCompatibleScreenManifests
+> Task :classepiu:extractDeepLinksRelease
+> Task :classepiu:parseReleaseLocalResources
+> Task :classepiu:processReleaseMainManifest
+> Task :classepiu:processReleaseManifest
+> Task :classepiu:processReleaseManifestForPackage
+> Task :classepiu:javaPreCompileRelease
+> Task :classepiu:extractProguardFiles
+> Task :classepiu:mergeReleaseJniLibFolders
+> Task :classepiu:mergeReleaseNativeLibs NO-SOURCE
+> Task :classepiu:stripReleaseDebugSymbols NO-SOURCE
+> Task :classepiu:extractReleaseNativeSymbolTables NO-SOURCE
+> Task :classepiu:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :classepiu:processReleaseResources
+> Task :classepiu:checkReleaseDuplicateClasses
+> Task :classepiu:desugarReleaseFileDependencies
+> Task :classepiu:mergeReleaseStartupProfile
+> Task :classepiu:compileReleaseKotlin
+> Task :classepiu:mergeExtDexRelease
+
+> Task :classepiu:compileReleaseKotlin
+w: file:///home/runner/work/classeviva-circolari/classeviva-circolari/app/classepiu/src/main/java/it/cellini/classepiu/RegistroFragment.kt:177:36 Parameter 'forza' is never used
+w: file:///home/runner/work/classeviva-circolari/classeviva-circolari/app/classepiu/src/main/java/it/cellini/classepiu/StudentiActivity.kt:68:13 Variable 'cellaOggi' is assigned but never accessed
+w: file:///home/runner/work/classeviva-circolari/classeviva-circolari/app/classepiu/src/main/java/it/cellini/classepiu/StudentiActivity.kt:83:27 The value 'cella' assigned to 'var cellaOggi: View? defined in it.cellini.classepiu.StudentiActivity.onCreate' is never used
+
+> Task :classepiu:compileReleaseJavaWithJavac
+> Task :classepiu:generateReleaseLintVitalReportModel
+> Task :classepiu:dexBuilderRelease
+> Task :classepiu:mergeReleaseArtProfile
+> Task :classepiu:mergeReleaseShaders
+> Task :classepiu:mergeReleaseGlobalSynthetics
+> Task :classepiu:compileReleaseShaders NO-SOURCE
+> Task :classepiu:generateReleaseAssets UP-TO-DATE
+> Task :classepiu:mergeReleaseAssets
+> Task :classepiu:compressReleaseAssets
+> Task :classepiu:extractReleaseVersionControlInfo
+> Task :classepiu:processReleaseJavaRes
+> Task :classepiu:mergeReleaseJavaResource
+> Task :classepiu:collectReleaseDependencies
+> Task :classepiu:sdkReleaseDependencyData
+> Task :classepiu:validateSigningRelease
+> Task :classepiu:writeReleaseAppMetadata
+> Task :classepiu:writeReleaseSigningConfigVersions
+> Task :classepiu:optimizeReleaseResources
+> Task :classepiu:mergeDexRelease
+> Task :classepiu:compileReleaseArtProfile
+> Task :classepiu:packageRelease
+> Task :classepiu:createReleaseApkListingFileRedirect
+> Task :classepiu:lintVitalAnalyzeRelease
+> Task :classepiu:lintVitalReportRelease
+> Task :classepiu:lintVitalRelease
+> Task :classepiu:assembleRelease
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/build-1792865272895.json
+
+BUILD SUCCESSFUL in 3m 7s
+48 actionable tasks: 48 executed
